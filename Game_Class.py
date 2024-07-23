@@ -1,0 +1,2 @@
+"""The Game class manages the Tetris game's state, including the grid, blocks, current and next blocks, score,
+sounds, and gameplay mechanics such as block movement, rotation, and collision detection."""
