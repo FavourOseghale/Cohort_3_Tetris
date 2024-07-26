@@ -4,7 +4,7 @@ clearing and moving rows, resetting the grid, and drawing the grid on a Pygame s
 import pygame
 
 
-class Grid:
+class Grid_Class:
     def __init__(self):
         self.num_rows = 20
         self.num_cols = 10
@@ -30,6 +30,6 @@ class Grid:
         for row in range(self.num_rows):
             for column in range(self.num_cols):
                 cell_value = self.grid[row][column]
-                cell_rect = pygame.Rect(column * self.cell_size  +1, row * self.cell_size +1, self.cell_size-1,
-                                        self.cell_size-1)
+                cell_rect = pygame.Rectangle(column * self.cell_size  +1, row * self.cell_size +1, 
+                                        self.cell_size-1, self.cell_size-1)
                 pygame.draw.rect(screen, self.colors[cell_value], cell_rect)
