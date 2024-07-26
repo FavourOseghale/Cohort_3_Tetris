@@ -5,7 +5,7 @@ rotating, and drawing the block on a Pygame screen."""
 from graphics import *
 import random
 
-class Block_Class(Rectangle):
+class Block_Class(Rect):
 
     BLOCK_SIZE = 30
     OUTLINE_WIDTH = 2
@@ -20,7 +20,7 @@ class Block_Class(Rectangle):
         
         p2 = Point(p1.x + Block_Class.BLOCK_SIZE, p1.y + Block_Class.BLOCK_SIZE) 
   
-        Rectangle.__init__(self, p1, p2)
+        Rect.__init__(self, p1, p2)
         
         self.setWidth(Block_Class.OUTLINE_WIDTH)
         self.setFill(color)
